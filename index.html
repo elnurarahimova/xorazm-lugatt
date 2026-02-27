@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'zbek-Xorazm Lug'ati</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>O'zbek-Xorazm Lug'ati</h1>
+        
+        <!-- 🌙 Tungi rejim va Men haqimda tugmalari -->
+        <div class="top-buttons">
+            <button onclick="toggleDarkMode()">🌙 Tungi rejim</button>
+            
+            <button onclick="showAbout()">ℹ️ Men haqimda</button>
+        </div>
+
+        <div class="toggle-container">
+            <label>
+                <input type="radio" name="direction" value="uz-xor" checked> O'zbekcha → Xorazmcha
+            </label>
+            <label>
+                <input type="radio" name="direction" value="xor-uz"> Xorazmcha → O'zbekcha
+            </label>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="So'zni kiriting..." onkeyup="searchWord()">
+        </div>
+
+        <div id="resultArea" class="result-card">
+            <p id="translatedWord">Tarjima shu yerda chiqadi...</p>
+        </div>
+
+        <!-- 📝 Men haqimda bo'limi -->
+        <div id="aboutArea" class="about-card" style="display: none;">
+            <p>Salom! Men Xorazm shevasini o‘rganishni yaxshi ko‘radigan dasturchiman. Bu sayt orqali siz O‘zbekcha va Xorazmcha so‘zlarni tez va qulay tarzda tarjima qilishingiz mumkin.</p>
+        </div>
+
+        <div class="footer">
+            <p>Xorazm shevasining boy merosi</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
